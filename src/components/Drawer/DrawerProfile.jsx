@@ -160,11 +160,11 @@ class DrawerProfile extends React.Component {
             <div className= "fwork-profile-account">
               <div className="fwork-profile-account-list">
                 <img src={ Padlock } alt="user-setting"/>
-                <p onClick={this.gotoSetting} className="cursor-pointer">{i18n.t('header:userSetting')}</p>
+                <p onClick={this.gotoSetting} className="cursor-pointer">{('Tài khoản')}</p>
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ Swap } alt="switch-company"/>
-                <p onClick={this.showModal} className="cursor-pointer">{i18n.t('header:switchCompany')}</p>
+                <p onClick={this.showModal} className="cursor-pointer">{i18n.t('Chuyển công ty')}</p>
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ World } alt="language"/>
