@@ -432,19 +432,8 @@ class HeaderCustom extends React.Component {
               position: 'absolute',
               right: 24
             }}>
-              {
-                linkCreate ? (
-                  <div className="fwk-btn-create" >
-                    <a className="fwk-create" onClick={() => this.handleCallBackCreate()}><img src={IconPlus} style={{ borderRadius: 4 }} />{i18n.t('header:create')}</a>
-                  </div>
-                ) : (callbackCreate ? (
-                  <div className="fwk-btn-create" >
-                    <a className="fwk-create" onClick={() => this.handleCallBackCreate()}><img src={IconPlus} style={{ borderRadius: 4 }} />{i18n.t('header:create')}</a>
-                  </div>
-                ) : '')
-              }
               <div className="fwork-header-action">
-                <Tooltip placement="bottom" title={i18n.t('header:notifications')} overlayClassName="fwk-tooltip-header">
+                <Tooltip placement="bottom" title={i18n.t('Thông báo')} overlayClassName="fwk-tooltip-header">
                   <div className={(action === 'Notification' && showDrw) ? 'fwork-header-notification fwork-header-notification-active' : 'fwork-header-notification'}>
                     <a onClick={this.showDrawerNotification} style={{ padding: '0px 0px 0px 10px' }}>
                       <img src={IconNotification} />
@@ -454,7 +443,7 @@ class HeaderCustom extends React.Component {
                   </div>
                 </Tooltip>
 
-                <Tooltip placement="bottom" title={i18n.t('header:help')} overlayClassName="fwk-tooltip-header">
+                <Tooltip placement="bottom" title={i18n.t('Trợ giúp')} overlayClassName="fwk-tooltip-header">
                   <div className="fwork-header-help" style={{ lineHeight: '45px' }}>
                     <a style={{ padding: '0px 16px' }} href={linkHelp ? `https://support.fpt.work/service${linkHelp}` : 'https://support.fpt.work/'} target='_blank'>
                       <img src={IconHelp} />
@@ -475,7 +464,7 @@ class HeaderCustom extends React.Component {
                 </div>
                 <ul className="fwork-main-nav">
                   <li className={this.state.showDropdown ? 'fwork-top-level-link fwk-list-drp' : 'fwork-top-level-link'} ref={this.myRef} id="fwk-menu-show" onClick={this.handleClickInside}>
-                    <Tooltip placement="bottom" title={i18n.t('header:applications')} overlayClassName="fwk-tooltip-header">
+                    <Tooltip placement="bottom" title={i18n.t('Ứng dụng')} overlayClassName="fwk-tooltip-header">
                       <span className="fwork-mega-menu"><img className="fwk-mega-icon" src={IconMenu} alt="icon" /></span>
                     </Tooltip>
                     <div style={{ width: (projects && projects.length > 6) ? '500px' : '500px' }}
@@ -487,11 +476,11 @@ class HeaderCustom extends React.Component {
                               <div className="fwork-search-header">
                                 <img src={IconHomeSearch} />
                                 <p className="fwork-search-p-header" onClick={this.handleClickHomePage}>Services Portal
-                                  <span className="fwork-search-span-header">{dataPrj ? dataPrj.length : 0} {i18n.t('header:install')}</span></p>
+                                  <span className="fwork-search-span-header">{dataPrj ? dataPrj.length : 0} {i18n.t('Ứng dụng đã cài đặt')}</span></p>
                               </div>
                               <Search
                                 className="fwork-search-input-header"
-                                placeholder={i18n.t('header:search')}
+                                placeholder={i18n.t('Tìm kiếm ứng dụng')}
                                 onChange={e => {
                                   this.handleSearch(e.target.value);
                                 }}

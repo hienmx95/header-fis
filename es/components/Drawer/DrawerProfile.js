@@ -158,7 +158,7 @@ var DrawerProfile = function (_React$Component) {
           React.createElement(
             'div',
             { className: 'text-logout', onClick: logout, onMouseEnter: this.handleHover, onMouseLeave: this.handleHover },
-            i18n.t('header:signOut')
+            'Đăng xuất'
           )
         ),
         React.createElement(
@@ -206,7 +206,7 @@ var DrawerProfile = function (_React$Component) {
             React.createElement(
               'p',
               { onClick: this.gotoSetting, className: 'cursor-pointer' },
-              i18n.t('header:userSetting')
+              'Thiết lập thông tin'
             )
           ),
           React.createElement(
@@ -216,7 +216,7 @@ var DrawerProfile = function (_React$Component) {
             React.createElement(
               'p',
               { onClick: this.showModal, className: 'cursor-pointer' },
-              i18n.t('header:switchCompany')
+              'Chuyển công ty'
             )
           ),
           React.createElement(
@@ -229,7 +229,7 @@ var DrawerProfile = function (_React$Component) {
               React.createElement(
                 'span',
                 null,
-                i18n.t('header:language'),
+                'Ngôn ngữ',
                 ' :'
               ),
               React.createElement(
@@ -238,7 +238,7 @@ var DrawerProfile = function (_React$Component) {
                 React.createElement(
                   Option,
                   { value: 'vi', className: 'language' },
-                  'Ti\u1EBFng Vi\u1EC7t'
+                  'Tiếng Việt'
                 ),
                 React.createElement(
                   Option,
@@ -255,17 +255,17 @@ var DrawerProfile = function (_React$Component) {
           React.createElement(
             'p',
             { className: 'fwork-profile-footer-p' },
-            i18n.t('header:learningAndSupport')
+            'Trợ giúp'
           ),
           React.createElement(
             'p',
             { className: 'fwork-profile-footer-content' },
-            i18n.t('header:content')
+            'Cung cấp thông tin cơ bản hay chuyên sâu về hệ thống. Bạn có thể tìm hiểu thông qua hướng dẫn sử dụng, câu hỏi Q&A, video...'
           ),
           React.createElement(
             Button,
             { className: 'fwork-profile-footer-btn', type: 'danger', ghost: true },
-            i18n.t('header:start')
+            'Tìm hiểu ngay'
           )
         )
       ),

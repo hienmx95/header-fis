@@ -48,22 +48,22 @@ class DrawerNotification extends React.Component {
                       {numberOfNotification > 99 ? (<span>+</span>) : ('')}</mark>) : null
                 }
               </a>
-              <p className="fwork-total-p">{i18n.t('header:notifications')}</p>
+              <p className="fwork-total-p">{i18n.t('Thông báo')}</p>
             </div>
           </div>
           <div>
             <Tabs defaultActiveKey="1" onChange={callback}>
-              <TabPane tab={i18n.t('header:all')} key="1">
+              <TabPane tab={i18n.t('Tất cả')} key="1">
                 {notifications.map((notification, i) => {
                   return <NotificationDetail notification={notification} key={i}/>;
                 })}
               </TabPane>
-              <TabPane tab={i18n.t('header:system')} key="2">
+              <TabPane tab={i18n.t('Hệ thống')} key="2">
                 {notificationsOfSystems.map((notification, i) => {
                   return <NotificationDetail notification={notification} key={i}/>;
                 })}
               </TabPane>
-              <TabPane tab={i18n.t('header:chat')} key="3">
+              <TabPane tab={i18n.t('Trò chuyện')} key="3">
                 {notificationsOfChat.map((notification, i) => {
                   return <NotificationDetail notification={notification} key={i}/>;
                 })}

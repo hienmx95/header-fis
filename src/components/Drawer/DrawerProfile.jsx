@@ -135,7 +135,7 @@ class DrawerProfile extends React.Component {
                 <Logout/>
               </div>
               <div className="text-logout" onClick={logout} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
-                {i18n.t('header:signOut')}
+                {i18n.t('Đăng xuất')}
               </div>
             </div>
             <div className = "fwork-profile-drawer">
@@ -160,16 +160,16 @@ class DrawerProfile extends React.Component {
             <div className= "fwork-profile-account">
               <div className="fwork-profile-account-list">
                 <img src={ Padlock } alt="user-setting"/>
-                <p onClick={this.gotoSetting} className="cursor-pointer">{('Tài khoản')} Thông tin tài khoản</p>
+                <p onClick={this.gotoSetting} className="cursor-pointer">{i18n.t('Thiết lập thông tin')}</p>
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ Swap } alt="switch-company"/>
-                <p onClick={this.showModal} className="cursor-pointer">{('Chuyển công ty')} Chuyển đổi công ty</p>
+                <p onClick={this.showModal} className="cursor-pointer"> {i18n.t('Chuyển công ty')}</p>
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ World } alt="language"/>
                 <div className="select-lang">
-                  <span>Ngon ngu :</span>
+                  <span>Ngôn ngữ:</span>
                   <Select className="select-language" defaultValue={this.state.lang} onChange={this.handleChangeLang}>
                     <Option value="vi" className="language">Tiếng Việt</Option>
                     <Option value="en" className="language">English</Option>
@@ -178,9 +178,9 @@ class DrawerProfile extends React.Component {
               </div>
             </div>
             <div className="fwork-profile-footer">
-              <p className = "fwork-profile-footer-p">{i18n.t('header:learningAndSupport')}</p>
-              <p className="fwork-profile-footer-content">{i18n.t('header:content')}</p>
-              <Button className="fwork-profile-footer-btn" type="danger" ghost>{i18n.t('header:start')}</Button>
+              <p className = "fwork-profile-footer-p">{i18n.t('Trợ giúp FWork')}</p>
+              <p className="fwork-profile-footer-content">{i18n.t('Cung cấp thông tin cơ bản hay chuyên sâu về hệ thống. Bạn có thể tìm hiểu thông qua hướng dẫn sử dụng, câu hỏi Q&A, video...')}</p>
+              <Button className="fwork-profile-footer-btn" type="danger" ghost>{i18n.t('Tìm hiểu ngay')}</Button>
             </div>
           </div>
           <ModalChooseCompany

@@ -86,7 +86,7 @@ var NotificationDetail = function (_React$Component) {
           ),
           parseInt(notification.status) === 1 && React.createElement(
             Tooltip,
-            { placement: 'topRight', title: i18n.t('header:markAsRead') },
+            { placement: 'topRight', title: i18n.t('Đánh dấu đã đọc') },
             React.createElement('div', { className: 'mark-as-read-dot', onClick: function onClick(e) {
                 e.stopPropagation();_this2.props.markAsRead();
               } })

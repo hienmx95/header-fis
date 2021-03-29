@@ -43,11 +43,11 @@ class AnnouncementDetail extends React.Component {
               <div className="created-date">
                 <Calendar />
                 <span className="fwork-notification-munite"><DateTimeFormat ago={true}>{notification.createdDate}</DateTimeFormat></span>
-                { notification.url && <div className="fwk-notification-linked"><img className="fwk-notification-linked-icon" src={ IconLink } /><span>{i18n.t('header:linked')}</span></div> }
+                { notification.url && <div className="fwk-notification-linked"><img className="fwk-notification-linked-icon" src={ IconLink } /><span>{i18n.t('Liên kết')}</span></div> }
               </div>
             </div>
             {parseInt(notification.status) === 1 &&
-              (<Tooltip placement="topRight" title={i18n.t('header:markAsRead')}>
+              (<Tooltip placement="topRight" title={i18n.t('Đánh dấu đã đọc')}>
                 <div className="mark-as-read-dot" onClick={(e) => { e.stopPropagation(); this.props.markAsRead(); }}></div>
               </Tooltip>)
             }

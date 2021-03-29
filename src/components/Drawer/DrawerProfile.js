@@ -26,7 +26,7 @@ class DrawerProfile extends React.Component {
         <div>
           <div className="fwork-title-profile">
             <img src={ Logout } onClick={logout} />
-            <p onClick={logout}>{i18n.t('header:signOut')}</p>
+            <p onClick={logout}>{i18n.t('Đăng xuất')}</p>
           </div>
           <div className = "fwork-profile-drawer">
             <div className="fwork-profile-image-drawer" >
@@ -44,24 +44,24 @@ class DrawerProfile extends React.Component {
             </div>
           </div>
           <div className= "fwork-profile-account">
-            <p className= "fwork-profile-account-p">{i18n.t('header:accountInformation')}</p>
+            <p className= "fwork-profile-account-p">{i18n.t('Thông tin tài khoản')}</p>
             <div className="fwork-profile-account-list">
               <img src={ User } />
-              <p>{i18n.t('header:myProfile')}</p>
+              <p>{i18n.t('Hồ sơ cá nhân')}</p>
             </div>
             <div className="fwork-profile-account-list">
               <img src = { ChangePassword } />
-              <p>{i18n.t('header:changePassword')}</p>
+              <p>{i18n.t('Thay đổi mật khẩu')}</p>
             </div>
             <div className="fwork-profile-account-list">
               <img src={ Setting } />
-              <p>{i18n.t('header:setting')}</p>
+              <p>{i18n.t('Cài đặt')}</p>
             </div>
           </div>
           <div className="fwork-profile-footer">
-            <p className = "fwork-profile-footer-p">{i18n.t('header:learningAndSupport')}</p>
-            <p className="fwork-profile-footer-content">{i18n.t('header:content')}</p>
-            <Button className="fwork-profile-footer-btn" type="danger" ghost>{i18n.t('header:start')}</Button>
+            <p className = "fwork-profile-footer-p">{i18n.t('Trợ giúp FWork')}</p>
+            <p className="fwork-profile-footer-content">{i18n.t('Cung cấp thông tin cơ bản hay chuyên sâu về hệ thống. Bạn có thể tìm hiểu thông qua hướng dẫn sử dụng, câu hỏi Q&A, video...')}</p>
+            <Button className="fwork-profile-footer-btn" type="danger" ghost>{i18n.t('Tìm hiểu ngay')}</Button>
           </div>
         </div>
       </Drawer>

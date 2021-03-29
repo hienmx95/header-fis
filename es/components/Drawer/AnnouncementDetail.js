@@ -90,14 +90,14 @@ var AnnouncementDetail = function (_React$Component) {
                 React.createElement(
                   'span',
                   null,
-                  i18n.t('header:linked')
+                  i18n.t('Liên kết')
                 )
               )
             )
           ),
           parseInt(notification.status) === 1 && React.createElement(
             Tooltip,
-            { placement: 'topRight', title: i18n.t('header:markAsRead') },
+            { placement: 'topRight', title: i18n.t('Đánh dấu đã đọc') },
             React.createElement('div', { className: 'mark-as-read-dot', onClick: function onClick(e) {
                 e.stopPropagation();_this2.props.markAsRead();
               } })

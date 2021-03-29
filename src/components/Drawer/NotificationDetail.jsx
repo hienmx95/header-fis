@@ -43,12 +43,12 @@ class NotificationDetail extends React.Component {
                 <Calendar />
                 <span className="fwork-notification-munite"><DateTimeFormat ago={true}>{notification.createdDate}</DateTimeFormat></span>
                 {/* {parseInt(notification.status) === 1 &&
-                (<span className="mark-as-read" onClick={(e) => { e.stopPropagation(); this.props.markAsRead(); }}>{i18n.t('header:markAsRead')}</span>)
+                (<span className="mark-as-read" onClick={(e) => { e.stopPropagation(); this.props.markAsRead(); }}>{i18n.t('Đánh dấu đã đọc')}</span>)
               } */}
               </div>
             </div>
             {parseInt(notification.status) === 1 &&
-              (<Tooltip placement="topRight" title={i18n.t('header:markAsRead')}>
+              (<Tooltip placement="topRight" title={i18n.t('Đánh dấu đã đọc')}>
                 <div className="mark-as-read-dot" onClick={(e) => { e.stopPropagation(); this.props.markAsRead(); }}></div>
               </Tooltip>)
             }

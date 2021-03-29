@@ -236,7 +236,7 @@ class DrawerNotification extends React.Component {
         className="notification-list"
       >
         <Tabs defaultActiveKey="1" onChange={callback} tabBarExtraContent={operations}>
-          <TabPane className="tab-notification" tab={`${i18n.t('header:notification')} (${numberOfNotificationText})`}
+          <TabPane className="tab-notification" tab={`${i18n.t('Hệ thống')} (${numberOfNotificationText})`}
             key="1">
             {
               this.state.notifications.map((notification, i) => {
@@ -252,7 +252,7 @@ class DrawerNotification extends React.Component {
               !this.state.notifications.length ? (<NoNotification />) : null
             }
           </TabPane>
-          <TabPane className="tab-announcement" tab={`${i18n.t('header:announcement')} (${numberOfAnnouncementText})`}
+          <TabPane className="tab-announcement" tab={`${i18n.t('Công báo')} (${numberOfAnnouncementText})`}
             key="2" onTabClick={() => {
             }}>
             {this.state.announcements.map((notification, i) => {

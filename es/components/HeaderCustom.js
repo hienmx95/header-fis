@@ -511,35 +511,13 @@ var HeaderCustom = function (_React$Component) {
                 position: 'absolute',
                 right: 24
               } },
-            linkCreate ? React.createElement(
-              'div',
-              { className: 'fwk-btn-create' },
-              React.createElement(
-                'a',
-                { className: 'fwk-create', onClick: function onClick() {
-                    return _this3.handleCallBackCreate();
-                  } },
-                React.createElement('img', { src: IconPlus, style: { borderRadius: 4 } }),
-                i18n.t('header:create')
-              )
-            ) : callbackCreate ? React.createElement(
-              'div',
-              { className: 'fwk-btn-create' },
-              React.createElement(
-                'a',
-                { className: 'fwk-create', onClick: function onClick() {
-                    return _this3.handleCallBackCreate();
-                  } },
-                React.createElement('img', { src: IconPlus, style: { borderRadius: 4 } }),
-                i18n.t('header:create')
-              )
-            ) : '',
+            linkCreate ? 
             React.createElement(
               'div',
               { className: 'fwork-header-action' },
               React.createElement(
                 Tooltip,
-                { placement: 'bottom', title: i18n.t('header:notifications'), overlayClassName: 'fwk-tooltip-header' },
+                { placement: 'bottom', title: i18n.t('Thông báo'), overlayClassName: 'fwk-tooltip-header' },
                 React.createElement(
                   'div',
                   { className: action === 'Notification' && showDrw ? 'fwork-header-notification fwork-header-notification-active' : 'fwork-header-notification' },
@@ -561,7 +539,7 @@ var HeaderCustom = function (_React$Component) {
               ),
               React.createElement(
                 Tooltip,
-                { placement: 'bottom', title: i18n.t('header:help'), overlayClassName: 'fwk-tooltip-header' },
+                { placement: 'bottom', title: i18n.t('Trợ giúp'), overlayClassName: 'fwk-tooltip-header' },
                 React.createElement(
                   'div',
                   { className: 'fwork-header-help', style: { lineHeight: '45px' } },
@@ -599,7 +577,7 @@ var HeaderCustom = function (_React$Component) {
                   { className: this.state.showDropdown ? 'fwork-top-level-link fwk-list-drp' : 'fwork-top-level-link', ref: this.myRef, id: 'fwk-menu-show', onClick: this.handleClickInside },
                   React.createElement(
                     Tooltip,
-                    { placement: 'bottom', title: i18n.t('header:applications'), overlayClassName: 'fwk-tooltip-header' },
+                    { placement: 'bottom', title: i18n.t('Ứng dụng'), overlayClassName: 'fwk-tooltip-header' },
                     React.createElement(
                       'span',
                       { className: 'fwork-mega-menu' },
@@ -635,13 +613,13 @@ var HeaderCustom = function (_React$Component) {
                                   { className: 'fwork-search-span-header' },
                                   dataPrj ? dataPrj.length : 0,
                                   ' ',
-                                  i18n.t('header:install')
+                                  i18n.t('FWork Portal')
                                 )
                               )
                             ),
                             React.createElement(Search, {
                               className: 'fwork-search-input-header',
-                              placeholder: i18n.t('header:search'),
+                              placeholder: i18n.t('Tìm kiếm ứng dụng'),
                               onChange: function onChange(e) {
                                 _this3.handleSearch(e.target.value);
                               },
