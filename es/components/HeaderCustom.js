@@ -612,7 +612,7 @@ var HeaderCustom = function (_React$Component) {
                                   { className: 'fwork-search-span-header' },
                                   dataPrj ? dataPrj.length : 0,
                                   ' ',
-                                  i18n.t('FWork Portal')
+                                  i18n.t('Ứng dụng đã cài đặt')
                                 )
                               )
                             ),
