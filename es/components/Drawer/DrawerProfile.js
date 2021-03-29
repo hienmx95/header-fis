@@ -206,7 +206,7 @@ var DrawerProfile = function (_React$Component) {
             React.createElement(
               'p',
               { onClick: this.gotoSetting, className: 'cursor-pointer' },
-              'Thông tin tài khoản'
+              i18n.t('header:userSetting')
             )
           ),
           React.createElement(
@@ -216,7 +216,7 @@ var DrawerProfile = function (_React$Component) {
             React.createElement(
               'p',
               { onClick: this.showModal, className: 'cursor-pointer' },
-              'Chuyển đổi công ty'
+              i18n.t('header:switchCompany')
             )
           ),
           React.createElement(

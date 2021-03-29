@@ -169,7 +169,7 @@ class DrawerProfile extends React.Component {
               <div className="fwork-profile-account-list">
                 <img src={ World } alt="language"/>
                 <div className="select-lang">
-                  <span>{i18n.t('header:language')} :</span>
+                  <span>Ngon ngu :</span>
                   <Select className="select-language" defaultValue={this.state.lang} onChange={this.handleChangeLang}>
                     <Option value="vi" className="language">Tiếng Việt</Option>
                     <Option value="en" className="language">English</Option>
