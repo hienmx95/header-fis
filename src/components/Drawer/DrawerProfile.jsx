@@ -164,7 +164,7 @@ class DrawerProfile extends React.Component {
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ Swap } alt="switch-company"/>
-                <p onClick={this.showModal} className="cursor-pointer">{('Chuyển công ty')} CHuyển đổi công ty</p>
+                <p onClick={this.showModal} className="cursor-pointer">{('Chuyển công ty')} Chuyển đổi công ty</p>
               </div>
               <div className="fwork-profile-account-list">
                 <img src={ World } alt="language"/>
