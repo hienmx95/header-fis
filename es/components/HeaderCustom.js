@@ -511,7 +511,6 @@ var HeaderCustom = function (_React$Component) {
                 position: 'absolute',
                 right: 24
               } },
-            linkCreate ? 
             React.createElement(
               'div',
               { className: 'fwork-header-action' },
