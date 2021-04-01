@@ -14,7 +14,7 @@ function deleteCookie(cname) {
 
 const apiGateway = 'http://localhost:9060';
 const urlLogin = 'http://localhost:9050/login';
-const cookie = getCookie('fwork-token');
+const cookie = getCookie('f1-token');
 if (!cookie) {
   // window.location.href = urlLogin;
 } else {
@@ -96,7 +96,7 @@ function writeHeader() {
 
 // logout
 function handleFworkLogout() {
-  deleteCookie('fwork-token');
+  deleteCookie('f1-token');
   window.location.href = urlLogin;
 }
 
